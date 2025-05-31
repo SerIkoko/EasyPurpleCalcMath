@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2b2b2b; /* Dark background */
+    font-family: 'Arial', sans-serif;
+    color: #fff; /* Light text */
+}
+
+.calculator {
+    background-color: #3c3c3c; /* Dark background of the calculator */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: auto;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #222; /* Dark display */
+    color: #fff; /* Light text */
+}
+
+.preview {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+    color: #b2a0d3; /* Preview color with purple hue */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+button {
+    padding: 25px;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #5e4b8b; /* Dark purple button */
+    color: #fff; /* Light text on buttons */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #7f65a3; /* Lighter purple on hover */
+}
+
+button.equal {
+    background-color: #8a63b8; /* Brighter purple for the "=" button */
+    color: white;
+    grid-column: span 4;
+}
+
+button.equal:hover {
+    background-color: #9a7cc1;
+}
+
+button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
